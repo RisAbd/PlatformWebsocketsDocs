@@ -3,7 +3,8 @@
 List of websockets avalailable on **Inobi** platform server
 
 ## Driver
-*Path: /ws/taxi/driver/*
+*Path: /ws/taxi/driver/*   
+
 Socket for driver to stay in contact with server. Messages will be sent to driver when: 
 
 	- here is a trip for a driver to accept
@@ -30,6 +31,7 @@ socket.onmessage = function(e) {
 
 ## Trip
 *Path: /ws/taxi/trips/{trip_id}/*
+
 Socket for getting trip messages. Messages will be sent to user/driver/manager on every trip related event. Some of them are followings:
 
 	- trip accepted
@@ -62,5 +64,5 @@ socket.onmessage = function(e) {
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjY4MDY2Mzk5XX0=
+eyJoaXN0b3J5IjpbLTEwODk4Mjg3NzksNjY4MDY2Mzk5XX0=
 -->
